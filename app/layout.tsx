@@ -5,9 +5,7 @@ export const metadata: Metadata = {
   title: "BudzRus",
   description: "Premium flower, edibles, infused meals, art, fashion and experiences across Soweto, Marshalltown and Fourways.",
   icons: {
-    icon: [
-      { url: "/favicon.png", type: "image/png" },
-    ],
+    icon: "/favicon.png?v=2",
   },
 };
 
@@ -18,9 +16,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.png?v=2" type="image/png" />
-      </head>
       <body>{children}</body>
     </html>
   );
