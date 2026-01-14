@@ -74,25 +74,22 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Branches Section */}
+        {/* Visit Our Branch Section */}
         <section className="py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center mb-12">Visit Our Branches</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-budz-green">
-                <h3 className="text-xl font-bold mb-4 text-budz-green">Fourways</h3>
-                <p className="text-gray-600 mb-4">Pineslopes Shopping Centre, Fourways</p>
-                <button className="text-budz-blue hover:text-budz-orange transition font-semibold">WhatsApp Coming Soon</button>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-budz-orange">
-                <h3 className="text-xl font-bold mb-4 text-budz-orange">Marshalltown</h3>
-                <p className="text-gray-600 mb-4">7 Loveday Street, Marshalltown, Johannesburg</p>
-                <button className="text-budz-blue hover:text-budz-orange transition font-semibold">WhatsApp Us</button>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-budz-red">
-                <h3 className="text-xl font-bold mb-4 text-budz-red">Soweto</h3>
-                <p className="text-gray-600 mb-4">1037 Mbhele Street, Zola North, Soweto</p>
-                <button className="text-budz-blue hover:text-budz-orange transition font-semibold">WhatsApp Us</button>
+            <h2 className="text-3xl font-bold text-center mb-12">Visit Our Branch</h2>
+            <div className="max-w-2xl mx-auto">
+              <div className="bg-white p-8 rounded-lg shadow-md border-l-4 border-budz-green">
+                <h3 className="text-2xl font-bold mb-4 text-budz-green">Fourways</h3>
+                <p className="text-gray-600 mb-4 text-lg">Pineslopes Shopping Centre, Fourways</p>
+                <div className="space-y-2 mb-6">
+                  <p className="text-gray-700"><span className="font-semibold">Hours:</span> Mon-Sat: 9:00-18:00, Sun: 10:00-16:00</p>
+                  <p className="text-gray-700"><span className="font-semibold">Phone:</span> +27 11 234 5678</p>
+                  <p className="text-gray-700"><span className="font-semibold">Email:</span> fourways@budzrus.com</p>
+                </div>
+                <button className="bg-budz-green text-white px-6 py-3 rounded-lg hover:bg-budz-orange transition font-semibold">
+                  WhatsApp Us
+                </button>
               </div>
             </div>
           </div>

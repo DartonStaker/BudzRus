@@ -12,6 +12,8 @@ const nextConfig = {
       },
     ],
   },
+  // Ensure proper output for Vercel
+  output: undefined,
 };
 
 module.exports = nextConfig;
