@@ -9,7 +9,9 @@ export function middleware(request: NextRequest) {
     const authCookie = request.cookies.get("admin-auth");
     
     if (!authCookie || authCookie.value !== "authenticated") {
-      return NextResponse.redirect(new URL("/admin/login", request.url));
+      const url = request.nextUrl.clone();
+      url.pathname = "/admin/login";
+      return NextResponse.redirect(url);
     }
   }
   
