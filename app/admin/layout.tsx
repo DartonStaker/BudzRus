@@ -8,6 +8,8 @@ export default async function AdminLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // Check authentication - if not authenticated, redirect to login
+  // The login page itself will be handled by middleware
   const authenticated = await isAuthenticated();
 
   if (!authenticated) {
