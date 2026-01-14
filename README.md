@@ -46,8 +46,10 @@ cd BudzRus
 ### 2. **Install dependencies**
 
 ```powershell
-npm install
+npm install --legacy-peer-deps
 ```
+
+**Note:** Due to React 19 and Next.js 15 compatibility, use `--legacy-peer-deps` flag during installation.
 
 ### 3. **Run Development Server**
 
