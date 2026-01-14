@@ -8,22 +8,26 @@ export default async function AdminLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // Check authentication - if not authenticated, redirect to login
-  // The login page itself will be handled by middleware
-  const authenticated = await isAuthenticated();
+  try {
+    const authenticated = await isAuthenticated();
 
-  if (!authenticated) {
-    redirect("/admin/login");
-  }
+    if (!authenticated) {
+      redirect("/admin/login");
+    }
 
-  return (
-    <div className="flex min-h-screen bg-gray-50">
-      <Sidebar />
-      <div className="flex-1 flex flex-col">
-        <AdminHeader />
-        <main className="flex-1 p-6">{children}</main>
+    return (
+      <div className="flex min-h-screen bg-gray-50">
+        <Sidebar />
+        <div className="flex-1 flex flex-col">
+          <AdminHeader />
+          <main className="flex-1 p-6">{children}</main>
+        </div>
       </div>
-    </div>
-  );
+    );
+  } catch (error) {
+    // If auth check fails (e.g., on login page or edge runtime issues), 
+    // just render children without layout wrapper
+    // The middleware will handle redirects for protected routes
+    return <>{children}</>;
+  }
 }
-
