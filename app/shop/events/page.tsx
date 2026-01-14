@@ -29,15 +29,15 @@ export default function Events() {
                   <h3 className="text-xl font-bold mb-2">{event.title}</h3>
                   <p className="text-gray-600 mb-1">{event.date}</p>
                   <p className="text-gray-600 mb-4">{event.location}</p>
-                  {event.ticket ? (
-                    <button className="w-full bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800">
-                      Buy Tickets
-                    </button>
-                  ) : (
-                    <button className="w-full bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-gray-300">
-                      RSVP
-                    </button>
-                  )}
+                    {event.ticket ? (
+                      <button className="w-full bg-budz-green text-white px-4 py-2 rounded-lg hover:bg-budz-orange transition font-semibold">
+                        Buy Tickets
+                      </button>
+                    ) : (
+                      <button className="w-full bg-budz-blue text-white px-4 py-2 rounded-lg hover:bg-budz-yellow transition font-semibold">
+                        RSVP
+                      </button>
+                    )}
                 </div>
               </div>
             ))}

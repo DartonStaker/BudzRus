@@ -11,7 +11,7 @@ export default function RedeemPoints() {
           <div className="bg-white p-8 rounded-lg shadow-md">
             <p className="text-center text-gray-600 mb-8">You currently have 0 points.</p>
             <div className="text-center">
-              <button className="bg-green-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-800 transition">
+              <button className="bg-budz-green text-white px-8 py-3 rounded-lg font-semibold hover:bg-budz-orange transition">
                 View Rewards
               </button>
             </div>

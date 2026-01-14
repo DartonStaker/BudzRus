@@ -39,7 +39,7 @@ export default function SundayMarket() {
             <div className="text-center">
               <Link
                 href="/apply-stall"
-                className="inline-block bg-green-700 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-800 transition"
+                className="inline-block bg-budz-green text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-budz-orange transition"
               >
                 Apply for a Stall
               </Link>

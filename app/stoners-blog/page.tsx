@@ -24,7 +24,7 @@ export default function Blog() {
                   <p className="text-sm text-gray-500 mb-2">{post.date}</p>
                   <h2 className="text-xl font-bold mb-3">{post.title}</h2>
                   <p className="text-gray-600 mb-4">{post.excerpt}</p>
-                  <Link href={`/stoners-blog/${post.id}`} className="text-green-700 font-semibold hover:underline">
+                  <Link href={`/stoners-blog/${post.id}`} className="text-budz-green font-semibold hover:text-budz-orange transition">
                     Read More →
                   </Link>
                 </div>

@@ -5,13 +5,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --budz-green: #22c55e;
+  --budz-orange: #f97316;
+  --budz-blue: #3b82f6;
+  --budz-red: #ef4444;
+  --budz-yellow: #eab308;
+  --budz-dark-blue: #1e3a8a;
 }
 
 body {

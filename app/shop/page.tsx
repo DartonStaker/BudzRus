@@ -21,10 +21,10 @@ export default function Shop() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {categories.map((category) => (
               <Link key={category.href} href={category.href}>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-                  <div className="bg-gray-200 h-64"></div>
+                <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition border-2 border-transparent hover:border-budz-green">
+                  <div className="bg-gradient-to-br from-budz-green to-budz-blue h-64"></div>
                   <div className="p-6">
-                    <h2 className="text-2xl font-bold mb-2">{category.name}</h2>
+                    <h2 className="text-2xl font-bold mb-2 text-budz-green">{category.name}</h2>
                     <p className="text-gray-600">{category.description}</p>
                   </div>
                 </div>

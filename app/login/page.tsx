@@ -14,7 +14,7 @@ export default function Login() {
               <input
                 type="email"
                 id="email"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-700"
+                className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-budz-blue"
                 required
               />
             </div>
@@ -23,13 +23,13 @@ export default function Login() {
               <input
                 type="password"
                 id="password"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-700"
+                className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-budz-blue"
                 required
               />
             </div>
             <button
               type="submit"
-              className="w-full bg-green-700 text-white px-4 py-3 rounded-lg font-semibold hover:bg-green-800 transition"
+              className="w-full bg-budz-green text-white px-4 py-3 rounded-lg font-semibold hover:bg-budz-orange transition"
             >
               Log In
             </button>
