@@ -185,17 +185,17 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12">EXPERIENCES</h2>
             <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-              Step into the heart of the action with our lineup of unforgettable events. From live music sessions and art showcases to Puff & Paint evenings and cultural gatherings, our events are designed to bring the community together in a vibrant, creative atmosphere. Experience the perfect mix of fun, connection, and entertainment at Weed Lovers Market.
+              Step into the heart of the action with our lineup of unforgettable events. From live music sessions and art showcases to Puff & Paint evenings and cultural gatherings, our events are designed to bring the community together in a vibrant, creative atmosphere. Experience the perfect mix of fun, connection, and entertainment at BudzRus.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: "90's Music", date: "Sat, 24 Jan", location: "Weed Lovers Market Fourways" },
+                { title: "90's Music", date: "Sat, 24 Jan", location: "BudzRus Fourways" },
                 { title: "4:20 Sunday Market", date: "Sun, 25 Jan", location: "Sandton" },
-                { title: "Sundays are for Weed Lovers", date: "Sun, 25 Jan", location: "Weed Lovers Market Marshalltown" },
-                { title: "To Jazz or Not To Jazz", date: "Sun, 01 Feb", location: "Weed Lovers Market Fourways" },
-                { title: "What the Funk?", date: "Sat, 07 Feb", location: "Weed Lovers Market Fourways" },
-                { title: "Frgmntd Space", date: "Sat, 28 Mar", location: "Weed Lovers Market Marshalltown", ticket: true },
+                { title: "Sundays are for Weed Lovers", date: "Sun, 25 Jan", location: "BudzRus Marshalltown" },
+                { title: "To Jazz or Not To Jazz", date: "Sun, 01 Feb", location: "BudzRus Fourways" },
+                { title: "What the Funk?", date: "Sat, 07 Feb", location: "BudzRus Fourways" },
+                { title: "Frgmntd Space", date: "Sat, 28 Mar", location: "BudzRus Marshalltown", ticket: true },
               ].map((event, index) => (
                 <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
                   <div className="bg-gray-200 h-48"></div>
@@ -270,7 +270,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold mb-4">SID Studio x WLM</h2>
             <p className="text-gray-600 mb-8 max-w-3xl">
-              Explore a bold collaboration between Weed Lovers Market and the iconic SID Studio. A celebration of cannabis culture through fashion. Designed with intention, this limited-edition range blends comfort, street style, and identity in wearable art that speaks to the 420 lifestyle.
+              Explore a bold collaboration between BudzRus and the iconic SID Studio. A celebration of cannabis culture through fashion. Designed with intention, this limited-edition range blends comfort, street style, and identity in wearable art that speaks to the 420 lifestyle.
             </p>
             
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">

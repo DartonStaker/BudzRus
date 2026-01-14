@@ -3,12 +3,12 @@ import Footer from "@/components/Footer";
 
 export default function Events() {
   const events = [
-    { title: "90's Music", date: "Sat, 24 Jan", location: "Weed Lovers Market Fourways", ticket: false },
+    { title: "90's Music", date: "Sat, 24 Jan", location: "BudzRus Fourways", ticket: false },
     { title: "4:20 Sunday Market", date: "Sun, 25 Jan", location: "Sandton", ticket: false },
-    { title: "Sundays are for Weed Lovers", date: "Sun, 25 Jan", location: "Weed Lovers Market Marshalltown", ticket: false },
-    { title: "To Jazz or Not To Jazz", date: "Sun, 01 Feb", location: "Weed Lovers Market Fourways", ticket: false },
-    { title: "What the Funk?", date: "Sat, 07 Feb", location: "Weed Lovers Market Fourways", ticket: false },
-    { title: "Frgmntd Space", date: "Sat, 28 Mar", location: "Weed Lovers Market Marshalltown", ticket: true },
+    { title: "Sundays are for Weed Lovers", date: "Sun, 25 Jan", location: "BudzRus Marshalltown", ticket: false },
+    { title: "To Jazz or Not To Jazz", date: "Sun, 01 Feb", location: "BudzRus Fourways", ticket: false },
+    { title: "What the Funk?", date: "Sat, 07 Feb", location: "BudzRus Fourways", ticket: false },
+    { title: "Frgmntd Space", date: "Sat, 28 Mar", location: "BudzRus Marshalltown", ticket: true },
   ];
 
   return (

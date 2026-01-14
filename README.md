@@ -1,7 +1,6 @@
-# BudzRus - Weed Lovers Market Clone
+# BudzRus
 
-A modern e-commerce platform for premium cannabis products and marijuana accessories, built with **Next.js**, **React**, and **TypeScript**.  
-This is a clone of [Weed Lovers Market](https://www.weedloversmarket.shop/).
+A modern e-commerce platform for premium cannabis products and marijuana accessories, built with **Next.js**, **React**, and **TypeScript**.
 
 ---
 
@@ -104,5 +103,5 @@ Your One-Stop Shop for Premium Cannabis Products in South Africa.
 
 ## About
 
-This is a clone of Weed Lovers Market, featuring premium flower, edibles, infused meals, art, fashion and experiences across Soweto, Marshalltown and Fourways.
+BudzRus features premium flower, edibles, infused meals, art, fashion and experiences across Soweto, Marshalltown and Fourways.
 

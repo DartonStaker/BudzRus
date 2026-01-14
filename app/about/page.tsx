@@ -10,7 +10,7 @@ export default function About() {
           <h1 className="text-4xl font-bold mb-8">About Us</h1>
           <div className="prose max-w-none">
             <p className="text-lg text-gray-600 mb-6">
-              Weed Lovers Market is your premier destination for premium cannabis products and marijuana accessories in South Africa. We offer a curated selection of flower, edibles, infused meals, art, fashion, and unforgettable experiences across our locations in Soweto, Marshalltown, and Fourways.
+              BudzRus is your premier destination for premium cannabis products and marijuana accessories in South Africa. We offer a curated selection of flower, edibles, infused meals, art, fashion, and unforgettable experiences across our locations in Soweto, Marshalltown, and Fourways.
             </p>
             <p className="text-lg text-gray-600 mb-6">
               Our mission is to create a vibrant community space where cannabis culture meets creativity, bringing together enthusiasts, artists, and entrepreneurs in a welcoming and responsible environment.
