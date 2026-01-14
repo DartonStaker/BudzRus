@@ -33,7 +33,6 @@ export default function MunchiesKitchen() {
                 bestSeller={meal.bestSeller}
                 newArrival={meal.newArrival}
                 productType="munchies-kitchen"
-                onAddToCart={() => console.log(`Added ${meal.name} to cart`)}
               />
             ))}
           </div>

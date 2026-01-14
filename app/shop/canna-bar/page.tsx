@@ -33,7 +33,6 @@ export default function CannaBar() {
                 bestSeller={product.bestSeller}
                 newArrival={product.newArrival}
                 productType="canna-bar"
-                onAddToCart={() => console.log(`Added ${product.name} to cart`)}
               />
             ))}
           </div>

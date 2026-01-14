@@ -29,7 +29,6 @@ export default function Edibles() {
                 price={product.price}
                 bestSeller={product.bestSeller}
                 productType="edibles"
-                onAddToCart={() => console.log(`Added ${product.name} to cart`)}
               />
             ))}
           </div>

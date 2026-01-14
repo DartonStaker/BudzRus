@@ -30,7 +30,6 @@ export default function Fashion() {
                 price={product.price}
                 newArrival={product.new}
                 productType="fashion"
-                onQuickView={() => console.log(`Quick view ${product.name}`)}
               />
             ))}
           </div>
