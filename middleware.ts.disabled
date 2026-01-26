@@ -3,10 +3,11 @@ import type { NextRequest } from "next/server";
 
 // TEMPORARILY DISABLED - Auth will be re-enabled after all features are implemented
 export function middleware(request: NextRequest) {
-  // Allow all requests through for now
+  // Allow all requests through for now - no auth checks
   return NextResponse.next();
 }
 
+// Only match admin routes - homepage should not be affected
 export const config = {
   matcher: "/admin/:path*",
 };
