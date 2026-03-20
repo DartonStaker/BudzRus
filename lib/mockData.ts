@@ -1,5 +1,6 @@
-// Mock data for admin dashboard
-// Will be replaced with Supabase queries later
+// Mock data for admin dashboard (orders, customers, etc.)
+// Product catalog for the shop lives in `lib/catalog.ts` + localStorage via CatalogProvider.
+// Will be replaced with Supabase queries later.
 
 export interface Product {
   id: number;
@@ -77,7 +78,7 @@ export interface BlogPost {
   created_at: string;
 }
 
-// Mock data generators
+/** @deprecated for storefront — kept for typing samples; live catalog is in `lib/catalog.ts` */
 export const mockProducts: Product[] = [
   {
     id: 1,

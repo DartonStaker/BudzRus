@@ -22,12 +22,18 @@ export default function AdminHeader() {
         <div>
           <h2 className="text-xl font-bold text-gray-800">Admin Dashboard</h2>
         </div>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center gap-4">
+          <Link
+            href="/admin/products"
+            className="font-semibold text-budz-green transition hover:text-budz-orange"
+          >
+            Catalog
+          </Link>
           <Link
             href="/"
-            className="text-budz-blue hover:text-budz-orange transition font-semibold"
+            className="font-semibold text-budz-blue transition hover:text-budz-orange"
           >
-            View Site
+            View site
           </Link>
           <button
             onClick={handleLogout}
