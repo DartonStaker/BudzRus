@@ -22,7 +22,8 @@ const config: Config = {
           blue: "#3b82f6",
           red: "#ef4444",
           yellow: "#eab308",
-          darkBlue: "#1e3a8a",
+          /** Use kebab-case key so utilities are `bg-budz-dark-blue`, `text-budz-dark-blue`, etc. */
+          "dark-blue": "#1e3a8a",
         },
       },
       borderRadius: {
