@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fafaf9;
+  --foreground: #0c0a09;
+  --surface-muted: #f5f5f4;
   --budz-green: #22c55e;
   --budz-orange: #f97316;
   --budz-blue: #3b82f6;
@@ -13,10 +14,70 @@
   --budz-dark-blue: #1e3a8a;
 }
 
+@layer base {
+  ::selection {
+    background-color: rgb(234 179 8 / 0.35);
+    color: var(--foreground);
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-budz-blue;
+  }
+}
+
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+}
+
+/* Subtle tech grid for branded media blocks */
+.budz-grid-overlay {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold transition duration-200;
+  }
+
+  .btn-primary {
+    @apply btn bg-budz-green text-white shadow-md shadow-budz-green/25 hover:-translate-y-0.5 hover:bg-budz-orange hover:shadow-lg hover:shadow-budz-orange/20 active:translate-y-0;
+  }
+
+  .btn-secondary {
+    @apply btn border-2 border-white bg-white/10 text-white backdrop-blur-sm hover:bg-white hover:text-budz-dark-blue;
+  }
+
+  .btn-outline-light {
+    @apply btn border-2 border-white bg-transparent text-white hover:bg-white/15;
+  }
+
+  .btn-accent {
+    @apply btn bg-budz-yellow text-budz-dark-blue hover:bg-budz-orange hover:text-white;
+  }
+
+  .btn-hero {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-7 py-3 text-sm font-semibold shadow-lg transition duration-200;
+  }
+
+  .btn-hero-solid {
+    @apply btn-hero bg-white text-budz-dark-blue hover:-translate-y-0.5 hover:bg-budz-yellow active:translate-y-0;
+  }
+
+  .btn-hero-ghost {
+    @apply btn-hero border-2 border-white/85 bg-white/10 text-white backdrop-blur-sm hover:bg-white/20;
+  }
+
+  .section-eyebrow {
+    @apply font-mono text-xs font-medium uppercase tracking-[0.25em] text-budz-blue;
+  }
+
+  .card-hover {
+    @apply transition duration-300 hover:-translate-y-1 hover:shadow-xl;
+  }
 }
 
 @layer utilities {
@@ -25,3 +86,16 @@ body {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  .card-hover,
+  [class*="hover:-translate"] {
+    transition-duration: 0.01ms !important;
+    transform: none !important;
+  }
+
+  .animate-fade-up {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+}

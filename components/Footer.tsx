@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-budz-dark-blue text-white border-t-4 border-budz-blue">
+    <footer className="border-t border-budz-blue/40 bg-budz-dark-blue text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
@@ -19,11 +19,39 @@ export default function Footer() {
             <p className="text-gray-300">Need Help?</p>
             <p className="text-gray-300">WhatsApp us at</p>
             <p className="text-budz-yellow font-semibold">060 295 8320</p>
-            <div className="flex space-x-4 mt-4">
-              <a href="#" className="text-gray-300 hover:text-budz-green transition">WhatsApp</a>
-              <a href="#" className="text-gray-300 hover:text-budz-orange transition">TikTok</a>
-              <a href="#" className="text-gray-300 hover:text-budz-blue transition">Instagram</a>
-              <a href="#" className="text-gray-300 hover:text-budz-red transition">X</a>
+            <div className="flex flex-wrap gap-x-4 gap-y-2 mt-4">
+              <a
+                href="https://wa.me/27602958320"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-budz-green transition"
+              >
+                WhatsApp
+              </a>
+              <a
+                href="https://www.tiktok.com/@budzrus"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-budz-orange transition"
+              >
+                TikTok
+              </a>
+              <a
+                href="https://www.instagram.com/budzrus/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-budz-blue transition"
+              >
+                Instagram
+              </a>
+              <a
+                href="https://x.com/budzrus"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-budz-red transition"
+              >
+                X
+              </a>
             </div>
           </div>
 

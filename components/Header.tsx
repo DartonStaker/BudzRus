@@ -12,7 +12,7 @@ export default function Header() {
   const [isCannabis101Open, setIsCannabis101Open] = useState(false);
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50 border-b-4 border-budz-blue">
+    <header className="sticky top-0 z-50 border-b border-budz-blue/35 bg-white/95 shadow-sm backdrop-blur-md supports-[backdrop-filter]:bg-white/80">
       {/* Top Utility Bar */}
       <div className="bg-budz-dark-blue text-white text-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

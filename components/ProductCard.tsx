@@ -36,8 +36,8 @@ export default function ProductCard({
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
-      <div className="relative h-48 bg-gray-200">
+    <div className="card-hover overflow-hidden rounded-2xl border border-stone-200/80 bg-white shadow-md">
+      <div className="relative h-48 bg-stone-200">
         <Image
           src={imgUrl}
           alt={name}
@@ -46,13 +46,13 @@ export default function ProductCard({
           unoptimized
         />
         {bestSeller && (
-          <span className="absolute top-2 left-2 bg-budz-yellow text-budz-dark-blue text-xs px-2 py-1 rounded font-bold">
+          <span className="absolute left-2 top-2 rounded-md bg-budz-yellow px-2 py-1 font-mono text-[0.65rem] font-bold uppercase tracking-wide text-budz-dark-blue">
             Best Seller
           </span>
         )}
         {newArrival && (
-          <span className="absolute top-2 right-2 bg-budz-yellow text-budz-dark-blue text-xs px-2 py-1 rounded font-bold">
-            New Arrival
+          <span className="absolute right-2 top-2 rounded-md bg-budz-yellow px-2 py-1 font-mono text-[0.65rem] font-bold uppercase tracking-wide text-budz-dark-blue">
+            New
           </span>
         )}
       </div>
@@ -60,11 +60,12 @@ export default function ProductCard({
         {bestSeller && !newArrival && (
           <p className="text-sm text-gray-500 mb-1">Best Seller</p>
         )}
-        <h3 className="font-bold mb-2">{name}</h3>
-        <p className="text-budz-orange font-semibold mb-3">Price {price}</p>
+        <h3 className="mb-2 font-display text-base font-bold leading-snug">{name}</h3>
+        <p className="mb-3 font-mono text-sm font-semibold text-budz-orange">{price}</p>
         <button
+          type="button"
           onClick={handleAddToCart}
-          className="w-full bg-budz-green text-white px-4 py-2 rounded-lg hover:bg-budz-orange transition text-sm font-semibold"
+          className="btn-primary w-full py-2.5 text-sm"
         >
           Add to Cart
         </button>
